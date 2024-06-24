@@ -115,9 +115,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -148.0
-offset_top = -155.0
+offset_top = -71.0
 offset_right = 148.0
-offset_bottom = -49.0
+offset_bottom = 35.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_30gfb")
@@ -126,25 +126,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_k43ru")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ilsvk")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_5e55p")
 text = "Play Game"
-
-[node name="QuitButton" type="Button" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -148.0
-offset_top = -1.0
-offset_right = 148.0
-offset_bottom = 105.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_30gfb")
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_k43ru")
-theme_override_styles/hover = SubResource("StyleBoxFlat_ilsvk")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_5e55p")
-text = "Quit Game"
 
 [node name="Panel" type="Panel" parent="."]
 anchors_preset = 7
@@ -189,4 +170,3 @@ sprite_frames = SubResource("SpriteFrames_b3siv")
 autoplay = "default"
 
 [connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
-[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

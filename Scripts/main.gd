@@ -11,7 +11,6 @@ func _ready():
 	get_tree().paused = true
 	new_game()
 	$GameOver/Panel/PlayButton.pressed.connect(new_game)
-	$GameOver/Panel/QuitButton.pressed.connect(quit)
 
 func new_game():
 	lives = 3
@@ -19,6 +18,7 @@ func new_game():
 	difficulty = 10.0
 	$EnemySpawner/Timer.wait_time = 1.0
 	$Player.reset()
+	get_tree().call_group("items", "queue_free")
 	reset()
 
 
@@ -32,10 +32,6 @@ func reset():
 	$GameOver.hide()
 	get_tree().paused = true
 	$RestartTimer.start()
-
-
-func quit():
-	get_tree().quit()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
