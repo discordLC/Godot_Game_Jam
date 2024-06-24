@@ -41,7 +41,7 @@ process_mode = 2
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 process_mode = 3
 stream = ExtResource("9_fqcvk")
-volume_db = -20.0
+volume_db = -25.0
 autoplay = true
 
 [connection signal="shoot" from="Player" to="BulletManger" method="_on_player_shoot"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdvh5n0w2t23l"
-path="res://.godot/imported/Small-8-Direction-Characters_by_AxulArt.png-7ff495ea1fe0fc71a6d5aebff1a9d96a.ctex"
+uid="uid://ckey4pk757gmh"
+path="res://.godot/imported/Main_Character_Sprite_Sheet.png-e1a239f8ebd23081eddc9872f54da0be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Player/Small-8-Direction-Characters_by_AxulArt.png"
-dest_files=["res://.godot/imported/Small-8-Direction-Characters_by_AxulArt.png-7ff495ea1fe0fc71a6d5aebff1a9d96a.ctex"]
+source_file="res://Sprites/Player/Main_Character_Sprite_Sheet.png"
+dest_files=["res://.godot/imported/Main_Character_Sprite_Sheet.png-e1a239f8ebd23081eddc9872f54da0be.ctex"]
 
 [params]
 

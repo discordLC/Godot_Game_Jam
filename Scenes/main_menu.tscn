@@ -1,0 +1,149 @@
+[gd_scene load_steps=13 format=3 uid="uid://dratdu1uj0cs7"]
+
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_q7peg"]
+[ext_resource type="PackedScene" uid="uid://dek6qoqgnxfd6" path="res://Scenes/world.tscn" id="1_to5j4"]
+[ext_resource type="FontFile" uid="uid://53fs3arsq6nh" path="res://UI/Font/superstar_memesbruh03.ttf" id="2_30gfb"]
+[ext_resource type="Texture2D" uid="uid://ckey4pk757gmh" path="res://Sprites/Player/Main_Character_Sprite_Sheet.png" id="3_dsxsw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k43ru"]
+bg_color = Color(0.247059, 0, 0.247059, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ilsvk"]
+bg_color = Color(0.501961, 0, 0.501961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5e55p"]
+bg_color = Color(0.8, 0, 0.8, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nyufw"]
+bg_color = Color(0.6, 0.305882, 0.792157, 1)
+border_width_top = 2
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yhq57"]
+atlas = ExtResource("3_dsxsw")
+region = Rect2(80, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3dtko"]
+atlas = ExtResource("3_dsxsw")
+region = Rect2(80, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u3gck"]
+atlas = ExtResource("3_dsxsw")
+region = Rect2(80, 64, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mdu56"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yhq57")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3dtko")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u3gck")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3dtko")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="MainMenu" type="CanvasLayer"]
+script = ExtResource("1_q7peg")
+
+[node name="World" parent="." instance=ExtResource("1_to5j4")]
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -186.0
+offset_top = 133.0
+offset_right = 187.0
+offset_bottom = 164.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_30gfb")
+theme_override_font_sizes/font_size = 75
+text = "GAME NAME"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -148.0
+offset_top = -155.0
+offset_right = 148.0
+offset_bottom = -49.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_30gfb")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_k43ru")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ilsvk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5e55p")
+text = "Play Game"
+
+[node name="QuitButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -148.0
+offset_top = -1.0
+offset_right = 148.0
+offset_bottom = 105.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_30gfb")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_k43ru")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ilsvk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5e55p")
+text = "Quit Game"
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -408.0
+offset_top = -48.0
+offset_right = 408.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_nyufw")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -45.0
+offset_top = 10.0
+offset_right = 45.0
+offset_bottom = 41.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_30gfb")
+theme_override_font_sizes/font_size = 30
+text = "For Wild And Proud Game Jam
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(168, 403)
+scale = Vector2(10, 10)
+sprite_frames = SubResource("SpriteFrames_mdu56")
+autoplay = "default"
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

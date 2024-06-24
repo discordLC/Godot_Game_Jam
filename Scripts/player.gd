@@ -2,6 +2,10 @@ extends CharacterBody2D
 
 signal shoot
 
+const START_SPEED : int = 200
+const BOOST_SPEED : int = 400
+const NORMAL_SHOT : float = 1
+const BOOST_SHOT : float = 0.5
 var speed : int
 var can_shoot : bool
 var screen_size : Vector2
@@ -15,7 +19,8 @@ func _ready():
 func reset():
 	can_shoot = true
 	position = screen_size / 2
-	speed = 200
+	speed = START_SPEED
+	$BulletTimer.wait_time = NORMAL_SHOT
 
 
 func get_input():
@@ -27,6 +32,7 @@ func get_input():
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and can_shoot:
 		var dir = get_global_mouse_position() - position
 		shoot.emit(position, dir)
+		$AudioStreamPlayer.play()
 		can_shoot = false
 		$BulletTimer.start()
 
@@ -53,5 +59,23 @@ func _physics_process(_delta):
 		$AnimatedSprite2D.frame = 1
 
 
+func boost():
+	$BoostTimer.start()
+	speed = BOOST_SPEED
+
+
+func quick_fire():
+	$FastFireTimer.start()
+	$BulletTimer.wait_time = BOOST_SHOT
+
+
 func _on_bullet_timer_timeout():
 	can_shoot = true
+
+
+func _on_boost_timer_timeout():
+	speed = START_SPEED
+
+
+func _on_fast_fire_timer_timeout():
+	$BulletTimer.wait_time = NORMAL_SHOT

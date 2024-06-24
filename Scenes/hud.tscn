@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bdf6i8g84w2i0" path="res://Sprites/Enemies/Zombie/tiny_zombie_idle_anim_f1.png" id="3_3adb7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5u2xv"]
+bg_color = Color(0.6, 0.305882, 0.792157, 1)
 border_width_top = 2
 border_color = Color(0, 0, 0, 1)
 

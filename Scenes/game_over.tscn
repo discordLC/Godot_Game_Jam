@@ -3,6 +3,7 @@
 [ext_resource type="FontFile" uid="uid://53fs3arsq6nh" path="res://UI/Font/superstar_memesbruh03.ttf" id="1_3rkem"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wd44x"]
+bg_color = Color(0.6, 0.305882, 0.792157, 1)
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
@@ -14,13 +15,13 @@ corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gskrq"]
-bg_color = Color(0.247059, 0.247059, 0.247059, 1)
+bg_color = Color(0.247059, 0, 0.247059, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62x2u"]
-bg_color = Color(0.501961, 0.501961, 0.501961, 1)
+bg_color = Color(0.501961, 0, 0.501961, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0ycqa"]
-bg_color = Color(0.8, 0.8, 0.8, 1)
+bg_color = Color(0.8, 0, 0.8, 1)
 
 [node name="GameOver" type="CanvasLayer"]
 
