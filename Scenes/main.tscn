@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://uqbtu2bc5226"]
+[gd_scene load_steps=10 format=3 uid="uid://uqbtu2bc5226"]
 
 [ext_resource type="PackedScene" uid="uid://1kogviwknlhi" path="res://Scenes/player.tscn" id="1_4lrh2"]
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_35602"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://pvw454m5p1wp" path="res://Scenes/enemy_spawner.tscn" id="4_4rjom"]
 [ext_resource type="PackedScene" uid="uid://c3saer7hq1aug" path="res://Scenes/hud.tscn" id="7_yvv2q"]
 [ext_resource type="PackedScene" uid="uid://boreaqcm0oc7r" path="res://Scenes/game_over.tscn" id="8_bir45"]
+[ext_resource type="AudioStream" uid="uid://doo0jy52fhj31" path="res://Music/Gaming FREE No Copyright Music for Video Editing  Cyber(Criminals) by David Feldman.mp3" id="9_fqcvk"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_35602")
@@ -36,6 +37,12 @@ one_shot = true
 
 [node name="GameOver" parent="." instance=ExtResource("8_bir45")]
 process_mode = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("9_fqcvk")
+volume_db = -20.0
+autoplay = true
 
 [connection signal="shoot" from="Player" to="BulletManger" method="_on_player_shoot"]
 [connection signal="hit_p" from="EnemySpawner" to="." method="_on_enemy_spawner_hit_p"]

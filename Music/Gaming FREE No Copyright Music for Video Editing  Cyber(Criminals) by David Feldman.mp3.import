@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://doo0jy52fhj31"
+path="res://.godot/imported/Gaming FREE No Copyright Music for Video Editing  Cyber(Criminals) by David Feldman.mp3-e26565e37a9df10ddecb077522befbad.mp3str"
+
+[deps]
+
+source_file="res://Music/Gaming FREE No Copyright Music for Video Editing  Cyber(Criminals) by David Feldman.mp3"
+dest_files=["res://.godot/imported/Gaming FREE No Copyright Music for Video Editing  Cyber(Criminals) by David Feldman.mp3-e26565e37a9df10ddecb077522befbad.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

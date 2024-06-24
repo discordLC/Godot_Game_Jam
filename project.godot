@@ -19,6 +19,11 @@ config/icon="res://icon.svg"
 
 window/size/viewport_width=816
 window/size/viewport_height=864
+window/size/resizable=false
+window/size/always_on_top=true
+window/energy_saving/keep_screen_on=false
+window/stretch/mode="viewport"
+window/stretch/scale_mode="integer"
 
 [importer_defaults]
 

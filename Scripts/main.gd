@@ -8,10 +8,10 @@ var lives : int
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	get_tree().paused = true
 	new_game()
 	$GameOver/Panel/PlayButton.pressed.connect(new_game)
 	$GameOver/Panel/QuitButton.pressed.connect(quit)
-
 
 func new_game():
 	lives = 3

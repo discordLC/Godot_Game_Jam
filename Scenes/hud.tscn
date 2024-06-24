@@ -30,9 +30,9 @@ texture = ExtResource("1_6i0ol")
 
 [node name="LifeLabel" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 49.0
+offset_left = 53.0
 offset_top = 10.0
-offset_right = 89.0
+offset_right = 93.0
 offset_bottom = 41.0
 theme_override_fonts/font = ExtResource("2_ukkgn")
 theme_override_font_sizes/font_size = 30
