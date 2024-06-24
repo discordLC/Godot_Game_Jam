@@ -5,9 +5,9 @@ extends Area2D
 
 var item_type : int # 0: Coffee 1: Health 2: Gun
 
-var speed_box = preload("res://icon.svg")
-var life_box = preload("res://icon.svg")
-var gun_box = preload("res://icon.svg")
+var speed_box = preload("res://Sprites/Items/Yam.png")
+var life_box = preload("res://Sprites/Items/Dog.png")
+var gun_box = preload("res://Sprites/Items/Gun.png")
 var textures = [speed_box, life_box, gun_box]
 
 # Called when the node enters the scene tree for the first time.

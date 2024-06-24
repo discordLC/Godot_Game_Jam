@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://c3saer7hq1aug"]
 
-[ext_resource type="Texture2D" uid="uid://clcmdvh2o211v" path="res://icon.svg" id="1_6i0ol"]
+[ext_resource type="Texture2D" uid="uid://bwuc6oa02wf4y" path="res://Tilemap/Sprite_Sheet.png" id="1_bk1nu"]
 [ext_resource type="FontFile" uid="uid://53fs3arsq6nh" path="res://UI/Font/superstar_memesbruh03.ttf" id="2_ukkgn"]
-[ext_resource type="Texture2D" uid="uid://bdf6i8g84w2i0" path="res://Sprites/Enemies/Zombie/tiny_zombie_idle_anim_f1.png" id="3_3adb7"]
+[ext_resource type="Texture2D" uid="uid://bnjj0h3jpcd6f" path="res://Sprites/Enemies/Depression/Depression_Monster.png" id="3_gmpoj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5u2xv"]
 bg_color = Color(0.6, 0.305882, 0.792157, 1)
@@ -26,8 +26,10 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_5u2xv")
 
 [node name="Sprite2D" type="Sprite2D" parent="Panel"]
 position = Vector2(27, 24)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("1_6i0ol")
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("1_bk1nu")
+region_enabled = true
+region_rect = Rect2(79.7287, 33.7832, 16.3508, 14.459)
 
 [node name="LifeLabel" type="Label" parent="Panel"]
 layout_mode = 0
@@ -59,9 +61,11 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Sprite2D2" type="Sprite2D" parent="Panel"]
-position = Vector2(735, 12)
-scale = Vector2(3.5, 3.625)
-texture = ExtResource("3_3adb7")
+position = Vector2(735, 25)
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("3_gmpoj")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16.4602)
 
 [node name="EnemiesLabel" type="Label" parent="Panel"]
 layout_mode = 0

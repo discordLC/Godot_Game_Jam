@@ -243,7 +243,7 @@ animations = [{
 size = Vector2(44, 64)
 
 [node name="Player" type="CharacterBody2D"]
-z_index = 1
+z_index = 2
 collision_layer = 2
 collision_mask = 17
 script = ExtResource("1_gbxfl")
@@ -269,7 +269,7 @@ one_shot = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_xvoch")
-volume_db = -20.0
+volume_db = -30.0
 
 [connection signal="timeout" from="BulletTimer" to="." method="_on_bullet_timer_timeout"]
 [connection signal="timeout" from="BoostTimer" to="." method="_on_boost_timer_timeout"]

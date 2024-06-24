@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://o8v54j0vva2n"
-path="res://.godot/imported/Fences.png-f7af3970eb8e418d5600a47b0985d697.ctex"
+uid="uid://b8hrqjeaxre6j"
+path="res://.godot/imported/Gun.png-558ddee1c789923435cfac6d176f6757.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tilemap/Fences.png"
-dest_files=["res://.godot/imported/Fences.png-f7af3970eb8e418d5600a47b0985d697.ctex"]
+source_file="res://Sprites/Items/Gun.png"
+dest_files=["res://.godot/imported/Gun.png-558ddee1c789923435cfac6d176f6757.ctex"]
 
 [params]
 

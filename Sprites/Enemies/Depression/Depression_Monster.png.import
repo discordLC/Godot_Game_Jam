@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://o8v54j0vva2n"
-path="res://.godot/imported/Fences.png-f7af3970eb8e418d5600a47b0985d697.ctex"
+uid="uid://bnjj0h3jpcd6f"
+path="res://.godot/imported/Depression_Monster.png-4f2965cf2cd8a529bf176cc1a22295b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tilemap/Fences.png"
-dest_files=["res://.godot/imported/Fences.png-f7af3970eb8e418d5600a47b0985d697.ctex"]
+source_file="res://Sprites/Enemies/Depression/Depression_Monster.png"
+dest_files=["res://.godot/imported/Depression_Monster.png-4f2965cf2cd8a529bf176cc1a22295b7.ctex"]
 
 [params]
 

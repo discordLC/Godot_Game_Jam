@@ -7,12 +7,13 @@
 size = Vector2(38, 38)
 
 [node name="Item" type="Area2D"]
+z_index = 1
 collision_layer = 16
 collision_mask = 2
 script = ExtResource("1_trjrn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.3, 0.3)
+scale = Vector2(2.375, 2.375)
 texture = ExtResource("1_8gdtb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
